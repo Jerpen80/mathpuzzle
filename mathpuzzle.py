@@ -16,29 +16,16 @@ def hard():
     y = random.randint(-50,50)
     return x, y
 print("\nWelcome to my puzzle!")
+choice = ['1','2','3']
 while play == 'y':
-    try:
-        print("\nDo you want to play easy, medium or hard?")
-        level = int(input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: "))
-        while level < 1: 
-            print("Please enter a number from 1 to 3")
-            level = int(input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: "))
-            while level > 3:
-                print("Please enter a number from 1 to 3")
-                level = int(input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: "))
-        while level > 3:
-            print("Please enter a number from 1 to 3")
-            level = int(input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: "))
-            while level < 1: 
-                print("Please enter a number from 1 to 3")
-                level = int(input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: "))
-    except ValueError:
-        print("Please enter a number from 1 to 3")
-        continue
+    print("\nDo you want to play easy, medium or hard?")
+    level = input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: ")
+    while level not in choice:
+        level = input("1 = easy, 2 = medium, 3 = hard. Typ 1, 2 or 3 and press enter: ")
     print("Find out what x and y are!")
-    if level == 1:
+    if level == '1':
         x, y = easy()
-    elif level == 2:
+    elif level == '2':
         x, y = medium()
     else:
         x, y = hard()
