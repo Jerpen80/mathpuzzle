@@ -12,8 +12,8 @@ def medium():
     y = random.randint(-20,20)
     return x, y
 def hard():
-    x = random.randint(-50,50)
-    y = random.randint(-50,50)
+    x = random.randint(-30,30)
+    y = random.randint(-30,30)
     return x, y
 print("\nWelcome to my puzzle!")
 choice = ['1','2','3']
