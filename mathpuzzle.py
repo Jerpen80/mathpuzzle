@@ -28,6 +28,9 @@ while play == 'y':
             if level > 3:
                 print("\nI know you think you are smart, but this game's difficulty doesn't go higher than 'hard', so starting a hard game\n")
                 level = 3
+            elif level <1:
+                print("\nCome on! Easy is doable, let's try an easy game!")
+                level = 1
     print("\nFind out what x and y are!")
     if level == 1:
         x, y = easy()
