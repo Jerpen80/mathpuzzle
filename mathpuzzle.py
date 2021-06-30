@@ -58,6 +58,3 @@ while play == 'y':
 print("\nYou've played "+ str(counter) +" games in total. You gave "+ str(won) + " right answer(s) and gave "+ str(lost) +" wrong anwer(s)!")
 print("\nThank you for playing! Have a nice day!")
 
-    
-
-
