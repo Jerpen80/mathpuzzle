@@ -18,18 +18,16 @@ def hard():
 print("\nWelcome to my puzzle!")
 choice = [1,2,3]
 while play == 'y':
-    print("\nDo you want to play easy, medium or hard?")
-    
     try:
+        print("\nDo you want to play easy, medium or hard?")
         level = int(input("1 = easy, 2 = medium, 3 = hard. Type 1, 2 or 3 and press enter: "))
-        
     except ValueError:
-        level = input("1 = easy, 2 = medium, 3 = hard. Type 1, 2 or 3 and press enter: ")
+        print("Type 1, 2 or 3 and press enter") 
         continue
     while level not in choice:
             if level > 3:
-                print("\nI know you think you are smart, but this game's difficulty doesn't go higher than 'hard'\n")
-                level = input("1 = easy, 2 = medium, 3 = hard. Type 1, 2 or 3 and press enter: ")
+                print("\nI know you think you are smart, but this game's difficulty doesn't go higher than 'hard', so starting a hard game\n")
+                level = 3
     print("\nFind out what x and y are!")
     if level == 1:
         x, y = easy()
