@@ -15,7 +15,7 @@ def hard():
     x = random.randint(-25,25)
     y = random.randint(-25,25)
     return x, y
-print("\nWelcome to my puzzle!")
+print("\nWelcome to this fun puzzle!")
 choice = [1,2,3]
 while play == 'y':
     try:
